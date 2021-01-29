@@ -1,0 +1,62 @@
+@model Giohang2601.Models.Product
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "_Layout";
+}
+@using (Html.BeginForm())
+{
+    <div>
+        <div>
+            <label>Product Id</label>
+            @Html.EditorFor(p=>p.ProductId)
+        </div>
+        <div>
+            <label>ProductName</label>
+            @Html.EditorFor(p=>p.ProductName)
+        </div>
+        <div>
+            <label>Price</label>
+            @Html.EditorFor(p=>p.Price)
+        </div>
+        <div>
+            <label>Photo</label>
+            @Html.EditorFor(p=>p.Photo)
+        </div>
+    </div>   
+    <div>
+        <input type="submit" value="Create" class="btn btn-success"/>
+    </div>
+    <h2>@ViewBag.Msg</h2>
+                    @Html.ActionLink("Back to List","Index")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
